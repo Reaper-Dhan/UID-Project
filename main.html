@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Voldemort - Home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/templatemo-style.css" rel="stylesheet">
+    <link href="css/custom-scroll.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="icon" href="https://img.icons8.com/doodle/96/000000/rv-campground.png" type="image/icon type">
+</head>
+
+<body class="tm-gray-bg">
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';" style="float:left;">&times;</span>
+        <span id="user" class="message">Hello, <email-id></Email-id></span>
+        <email-id></email-id>
+    </div>
+
+    <div class="topnav" id="myTopnav">
+        <a href="./main.html" class="active">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./tours.html">Our Tours</a>
+        <a href="./contact.html">Contact</a>
+        <a onclick="logout()">Logout</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <p style="float:right; color:yellow; margin-top: 28px; margin-right: 30px; font-size: 30px;">Voldemort</p>
+    </div>
+    <section class="tm-banner">
+        <div class="flexslider flexslider-banner">
+            <ul class="slides">
+                <li>
+                    <div class="tm-banner-inner">
+                        <h1 class="tm-banner-title">Find <span class="tm-yellow-text">The Best</span> Place</h1>
+                        <p class="tm-banner-subtitle">For Your Holidays</p>
+
+                    </div>
+                    <img src="img/banner-1.jpg" alt="Image" />
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <section class="container tm-home-section-1" id="more">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center">
+                    <img src="img/ladakh1.jpg" alt="image" height="500" width="800" class="img-responsive">
+                    <a href="#">
+                        <div class="tm-green-gradient-bg tm-city-price-container">
+                            <span>Leh Ladakh</span>
+                            <span>RS.80000</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center">
+                    <img src="img/taj.jpg" alt="image" height="500" width="800" class="img-responsive">
+                    <a href="#">
+                        <div class="tm-green-gradient-bg tm-city-price-container">
+                            <span>Taj Mahal</span>
+                            <span>RS.55000</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right">
+                    <img src="img/index-08.jpg" alt="image" height="500" width="800" class="img-responsive">
+                    <a href="#">
+                        <div class="tm-green-gradient-bg tm-city-price-container">
+                            <span>kolkata</span>
+                            <span>RS.78000</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section-margin-top">
+            <div class="row">
+                <div class="tm-section-header">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <hr>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <h2 class="tm-section-title">Dates of upcoming tours</h2>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="tm-home-box-2">
+                        <img src="img/index-03.jpg" alt="image" class="img-responsive">
+                        <h3>Goa beaches</h3>
+                        <p class="tm-date">28 March 2022</p>
+                        <div class="tm-home-box-2-container">
+                            <center>
+                                <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Travel</span></a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="tm-home-box-2">
+                        <img src="img/index-04.jpg" alt="image" class="img-responsive">
+                        <h3>Thar desert</h3>
+                        <p class="tm-date">26 February 2022</p>
+                        <div class="tm-home-box-2-container">
+                            <center>
+                                <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Travel</span></a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="tm-home-box-2">
+                        <img src="img/index-05.jpg" alt="image" class="img-responsive">
+                        <h3>Ooty</h3>
+                        <p class="tm-date">12 March 2022</p>
+                        <div class="tm-home-box-2-container">
+                            <center>
+                                <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Travel</span></a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="tm-home-box-2 tm-home-box-2-right">
+                        <img src="img/index-06.jpg" alt="image" class="img-responsive">
+                        <h3>Andhra pradesh</h3>
+                        <p class="tm-date">02 January 2022</p>
+                        <div class="tm-home-box-2-container">
+                            <center>
+                                <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Travel</span></a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="home-description">Hope you will love all our upcoming plans and you are free to enroll</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tm-white-bg section-padding-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="tm-section-header section-margin-top">
+                    <div class="col-lg-4 col-md-3 col-sm-3">
+                        <hr>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <h2 class="tm-section-title">Popular Packages</h2>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-3">
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tm-home-box-3">
+                        <div class="tm-home-box-3-img-container">
+                            <img src="img/index-07.jpg" alt="image" class="img-responsive">
+                        </div>
+                        <div class="tm-home-box-3-info">
+                            <p class="tm-home-box-3-description">Located at Chunnambar along the Cuddalore road, Paradise Beach is one of the spectacular Places to visit in Pondicherry. </p>
+                            <div class="tm-home-box-2-container">
+                                <center>
+                                    <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Travel</span></a>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tm-home-box-3">
+                        <div class="tm-home-box-3-img-container">
+                            <img src="img/index-08.jpg" "alt:"image " class="img-responsive ">	
+						</div>
+						<div class="tm-home-box-3-info ">
+							<p class="tm-home-box-3-description ">To say that Howrah Bridge is one of the top places to visit in Kolkata would be an understatement. An unofficial emblem of the city.</p>
+					        <div class="tm-home-box-2-container ">
+							<center>
+							<a href="# " class="tm-home-box-2-link "><span class="tm-home-box-2-description box-3 ">Travel</span></a>
+							</center>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 ">
+				    <div class="tm-home-box-3 ">
+						<div class="tm-home-box-3-img-container ">
+							<img src="img/index-09.jpg " alt="image " class="img-responsive ">	
+						</div>
+						<div class="tm-home-box-3-info ">
+							<p class="tm-home-box-3-description ">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year. </p>
+					        <div class="tm-home-box-2-container ">
+							<center>
+							<a href="# " class="tm-home-box-2-link "><span class="tm-home-box-2-description box-3 ">Travel</span></a>
+							</center>
+						</div>
+						</div>
+					</div>
+			    </div>
+			    <div class="col-lg-6 ">
+			        <div class="tm-home-box-3 ">
+						<div class="tm-home-box-3-img-container ">
+							<img src="img/index-10.jpg " alt="image " class="img-responsive ">	
+						</div>
+						<div class="tm-home-box-3-info ">
+							<p class="tm-home-box-3-description ">The Best time to visit Ladakh is during the summer season from the month of April to July during this time temperature is between 15 to 30 Degree Celsius.</p>
+					        <div class="tm-home-box-2-container ">
+							<center>
+							<a href="# " class="tm-home-box-2-link "><span class="tm-home-box-2-description box-3 ">Travel</span></a>
+							</center>
+						</div>
+						</div>
+					</div>
+			   	</div>
+			</div>		
+		</div>
+	</section>
+	<footer class="tm-black-bg ">
+		<div class="container ">
+			<div class="row ">
+				<p class="tm-copyright-text " style="font-size: 15px;; ">Project By<br>
+                    <mark style="background-color:black; color:rgb(67, 229, 235); ">Harish M &ensp; Varun Kishore S &ensp; Dhanvinesh K &ensp;</mark><br><br> &copy; All rights reserved, 2021</p>
+			</div>
+		</div>
+	</footer>
+    <button onclick="topFunction() " id="myBtn " title="Go to top ">🔺</button>
+	<script type="text/javascript " src="js/jquery-1.11.2.min.js "></script>
+  	<script type="text/javascript " src="js/moment.js "></script>
+	<script type="text/javascript " src="js/bootstrap.min.js "></script>
+	<script type="text/javascript " src="js/bootstrap-datetimepicker.min.js "></script>
+	<script type="text/javascript " src="js/jquery.flexslider-min.js "></script>
+   	<script type="text/javascript " src="js/templatemo-script.js "></script>
+    <script>
+        var mybutton = document.getElementById("myBtn ");
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block ";
+            } else {
+                mybutton.style.display = "none ";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+	<script>
+		$(function() {
+
+			$('#hotelCarTabs a').click(function (e) {
+			  e.preventDefault()
+			  $(this).tab('show')
+			})
+
+        	$('.date').datetimepicker({
+            	format: 'MM/DD/YYYY'
+            });
+            $('.date-time').datetimepicker();
+		  	$('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+		  	});
+		});
+		$(window).load(function() {
+		    $('.flexslider').flexslider({
+			    controlNav: false
+		    });
+	  	});
+	</script>
+ </body>
+ </html>
+
+<style>
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 20px;
+        background-color: rgba(69, 55, 75, 0.87);
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 0px 10px;
+        border: 0px;
+    }
+
+    #myBtn:hover {
+        background-color: rgb(45, 37, 92);
+    }
+
+    .alert {
+    padding: 20px;
+    background-color: #740b8f;
+    color: white;
+    text-align: center;
+    transform: translateY(10px);
+}
+    .topnav {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    height:100px;
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+.topnav a {
+    font-family: 'Yeseva One', cursive;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 38px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    height:100px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #f5300d;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+</style>

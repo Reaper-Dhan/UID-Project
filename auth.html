@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Voldemort - Authentication</title>
+    <link href="css/auth.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://img.icons8.com/doodle/96/000000/rv-campground.png" type="image/icon type">
+</head>
+
+<body>
+    <br>
+    <center>
+        <br><br><br><br><br><br>
+        <form onsubmit="login()" id="loginForm">
+            <br>
+            <center>
+                <h2>
+                    LOGIN FORM
+                </h2>
+                <br>
+                <center><small><span id="error" style="color: red"></span></small></center>
+                <br>
+                <input id="email" type="text" placeholder="Email ID" required autocomplete="nope">
+                <br><br>
+                <input id="password" type="password" placeholder="Password" required autocomplete="new-password">
+                <br><br><br>
+                <button class="firebase" type="submit">Login</button> &emsp;&emsp;
+                <button class="firebase" onclick="signUp()">Sign Up</button>
+            </center>
+            <br>
+            <br>
+        </form>
+    </center>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>
+
+<style>
+    h2 {
+        font-family: 'Fredoka One', cursive;
+    }
+    
+    input {
+        font-family: 'Merienda', cursive;
+    }
+    
+    button {
+        font-family: 'El Messiri', sans-serif;
+    }
+</style>

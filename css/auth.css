@@ -1,0 +1,45 @@
+h2 {
+    font-size: 40px;
+}
+
+body {
+    overflow: hidden;
+    background-color: rgb(113, 234, 238);
+}
+
+form {
+    background-color: rgba(248, 246, 118, 0.741);
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 80%;
+}
+
+input {
+    padding: 10px;
+    font-size: 20px;
+    width: 42%;
+    text-align: center;
+    border-radius: 0px 20px;
+}
+
+.welcome {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(131, 49, 208, 0.898);
+}
+
+button.firebase {
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button.firebase:hover {
+    background-color: rgb(240, 139, 121);
+    border: 1px solid black;
+}

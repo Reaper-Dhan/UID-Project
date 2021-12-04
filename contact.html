@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voldemort - Contact</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/templatemo-style.css" rel="stylesheet">
+    <link href="css/custom-scroll.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="icon" href="https://img.icons8.com/doodle/96/000000/rv-campground.png" type="image/icon type">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="./main.html" class="active">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./tours.html">Our Tours</a>
+        <a href="./contact.html">Contact</a>
+        <a onclick="logout()">Logout</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <p style="float:right; color:yellow; margin-top: 28px; margin-right: 30px; font-size: 30px;">Voldemort</p>
+    </div>
+    <section class="tm-banner">
+        <div class="flexslider flexslider-banner">
+            <ul class="slides">
+                <li>
+                    <div class="tm-banner-inner">
+                        <h1 class="tm-banner-title">Your <span class="tm-yellow-text">Special</span> Tour</h1>
+                        <p class="tm-banner-subtitle">For Upcoming Holidays</p>
+                    </div>
+                    <img src="img/banner-3.jpg" alt="Banner 3" />
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="container tm-home-section-1" id="more">
+        <div class="row">
+            <div class="flexslider effect2 effect2-contact tm-contact-box-1">
+                <ul class="slides">
+                    <li>
+                        <img src="img/world-map.png" alt="image" class="contact-image" />
+                        <div class="contact-text">
+                            <h2 class="slider-title">World tourism</h2>
+                            <h3 class="slider-subtitle">Some facts about world tourism</h3>
+                            <p class="slider-description">UNWTO has therefore designated World Tourism Day 2021 as a day to focus on Tourism for Inclusive Growth. This is an opportunity to look beyond tourism statistics and acknowledge that, behind every number, there is a person.
+                                UNWTO invites its Member States, as well as non-members, sister UN agencies, businesses and individuals to celebrate tourism’s unique ability to ensure that nobody is left behind as the world begins to open up again and
+                                look to the future. World Tourism Day, celebrated each year on 27 September, is the global observance day fostering awareness of tourism’s social, cultural, political and economic value and the contribution that the sector
+                                can make towards reaching the Sustainable Development Goals.</p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="tm-section-header section-margin-top">
+                    <div class="col-lg-4 col-md-3 col-sm-3">
+                        <hr>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <h2 class="tm-section-title">Contact Us</h2>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-3">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <form class="tm-contact-form">
+                    <div class="col-lg-6 col-md-6">
+                        <div id="google-map"></div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 tm-contact-form-input">
+                        <div class="form-group">
+                            <input type="text" id="contact_name" class="form-control" placeholder="NAME" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact_email" class="form-control" placeholder="EMAIL" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="contact_subject" class="form-control" placeholder="SUBJECT" />
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact_message" class="form-control" rows="6" placeholder="MESSAGE"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="tm-submit-btn" type="submit" name="submit">Submit now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="tm-black-bg">
+        <div class="container">
+            <div class="row">
+                <p class="tm-copyright-text" style="font-size: 15px;;">Project By<br>
+                    <mark style="background-color:black; color:rgb(67, 229, 235);">Harish M &ensp; Varun Kishore S &ensp; Dhanvinesh K &ensp;</mark><br><br> &copy; All rights reserved, 2021</p>
+            </div>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">🔺</button>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/templatemo-script.js"></script>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        var map = '';
+        var center;
+
+        function initialize() {
+            var mapOptions = {
+                zoom: 14,
+                center: new google.maps.LatLng(37.769725, -122.462154),
+                scrollwheel: false
+            };
+
+            map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+
+            google.maps.event.addDomListener(map, 'idle', function() {
+                calculateCenter();
+            });
+
+            google.maps.event.addDomListener(window, 'resize', function() {
+                map.setCenter(center);
+            });
+        }
+
+        function calculateCenter() {
+            center = map.getCenter();
+        }
+
+        function loadGoogleMap() {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
+            document.body.appendChild(script);
+        }
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+            $('.flexslider').flexslider({
+                controlNav: false,
+                directionNav: false
+            });
+            loadGoogleMap();
+        });
+    </script>
+</body>
+
+</html>
+
+<style>
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 20px;
+        background-color: rgba(69, 55, 75, 0.87);
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 0px 10px;
+        border: 0px;
+    }
+    
+    #myBtn:hover {
+        background-color: rgb(45, 37, 92);
+    }
+    
+    .topnav {
+        background-color: rgb(0, 0, 0);
+        overflow: hidden;
+        height: 100px;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+    .topnav a {
+        font-family: 'Yeseva One', cursive;
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 38px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        height: 100px;
+    }
+    
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .topnav a.active {
+        background-color: #f5300d;
+        color: white;
+    }
+    
+    .topnav .icon {
+        display: none;
+    }
+</style>
